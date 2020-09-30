@@ -28,7 +28,7 @@ This loop is an adapation from Sara Bandres-Ciga (www.github.com/sarabandres).
 
 ```R
 listOfGwasIds <- read.table("TRAITS.txt", header = T)
-for(i in 1:(nrow(listOfGwasIds)-1))
+for(i in 1:nrow(listOfGwasIds))
 {
   instrumentId <- as.character(listOfGwasIds$id[i])
   instrumentName <- as.character(listOfGwasIds$study[i])
